@@ -58,7 +58,6 @@ public:
     }
     void compileShaders(GLuint& vertexShader, GLuint& fragmentShader, GLuint& shaderProgram)
     {
-
         vertexShader = glCreateShader(GL_VERTEX_SHADER);
         glShaderSource(vertexShader, 1, &vertexSource, NULL);
         glCompileShader(vertexShader);
@@ -86,14 +85,13 @@ public:
             std::vector<GLchar> infoLog(maxLength);
             glGetShaderInfoLog(fragmentShader, maxLength, &maxLength, &infoLog[0]);
         }
+
         shaderProgram = glCreateProgram();
         glAttachShader(shaderProgram, vertexShader);
         glAttachShader(shaderProgram, fragmentShader);
         glBindFragDataLocation(shaderProgram, 0, "outColor");
         glLinkProgram(shaderProgram);
         glUseProgram(shaderProgram);
-
-
 
     }
     GLint setPosAttrib(GLint& posAttrib, GLuint& shaderProgram)
@@ -122,6 +120,7 @@ public:
     {
         return &fragmentShader;
     }
+
 };
 class Camera
 {
@@ -134,8 +133,8 @@ private:
     GLint uniView;
     glm::mat4 proj;
     GLint uniProj;
-    double yaw = -90;  //obrót względem osi Y
-    double pitch = 0;   //obrót względem osi X
+    double yaw;  //obrót względem osi Y
+    double pitch;   //obrót względem osi X
     int lastX;
     int lastY;
     bool firstMouse;
@@ -144,6 +143,8 @@ private:
 public:
     Camera(GLuint &shaderProgram)
     {
+        yaw = -90;
+        pitch = 0;
         firstMouse = true;
         cameraPos = glm::vec3(0.0f, 0.0f, 3.0f);
         cameraFront = glm::vec3(0.0f, 0.0f, -1.0f);
@@ -253,21 +254,13 @@ public:
         if (pitch < -89.0f)
             pitch = -89.0f;
 
-
-
         glm::vec3 front;
         front.x = cos(glm::radians(yaw)) * cos(glm::radians(pitch));
         front.y = sin(glm::radians(pitch));
         front.z = sin(glm::radians(yaw)) * cos(glm::radians(pitch));
         cameraFront = glm::normalize(front);
 
-        glm::mat4 view;
-        view = glm::lookAt(cameraPos, cameraPos + cameraFront, cameraUp);
-        glUniformMatrix4fv(uniView, 1, GL_FALSE, glm::value_ptr(view));
-
-
-
-
+        glUniformMatrix4fv(uniView, 1, GL_FALSE, glm::value_ptr(glm::lookAt(cameraPos, cameraPos + cameraFront, cameraUp)));
 
     }
 };
@@ -344,17 +337,19 @@ void kostka(GLint vbo_buffer)
 }
 int main()
 {
-    sf::Clock clock;
-    sf::Time time;
+
     Okno window;
+    GLuint vao;
+    GLuint vbo;
     glewExperimental = GL_TRUE;
     glewInit();
-    GLuint vao;
     glGenVertexArrays(1, &vao);
     glBindVertexArray(vao);
-    GLuint vbo;
     glGenBuffers(1, &vbo);
     kostka(vbo);
+
+    sf::Clock clock;
+    sf::Time time;
     Shader shader;
     Camera kamera(*shader.getShaderProgram());
 
