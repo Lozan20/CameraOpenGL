@@ -1,0 +1,2 @@
+﻿  OpenGL_GLM_Camera.cpp
+LINK : fatal error LNK1181: nie można otworzyć pliku wejściowego „glew32.lib”

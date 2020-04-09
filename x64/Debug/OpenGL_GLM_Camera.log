@@ -1,0 +1,37 @@
+﻿  OpenGL_GLM_Camera.cpp
+OpenGL_GLM_Camera.obj : error LNK2019: nierozpoznany zewnętrzny symbol __imp_glewInit przywołany w funkcji main
+OpenGL_GLM_Camera.obj : error LNK2019: nierozpoznany zewnętrzny symbol "__declspec(dllimport) public: __cdecl sf::String::String(char const *,class std::locale const &)" (__imp_??0String@sf@@QEAA@PEBDAEBVlocale@std@@@Z) przywołany w funkcji main
+OpenGL_GLM_Camera.obj : error LNK2019: nierozpoznany zewnętrzny symbol "__declspec(dllimport) public: __cdecl sf::String::~String(void)" (__imp_??1String@sf@@QEAA@XZ) przywołany w funkcji main
+OpenGL_GLM_Camera.obj : error LNK2019: nierozpoznany zewnętrzny symbol "__declspec(dllimport) public: __cdecl sf::VideoMode::VideoMode(unsigned int,unsigned int,unsigned int)" (__imp_??0VideoMode@sf@@QEAA@III@Z) przywołany w funkcji main
+OpenGL_GLM_Camera.obj : error LNK2019: nierozpoznany zewnętrzny symbol "__declspec(dllimport) public: __cdecl sf::Window::Window(class sf::VideoMode,class sf::String const &,unsigned int,struct sf::ContextSettings const &)" (__imp_??0Window@sf@@QEAA@VVideoMode@1@AEBVString@1@IAEBUContextSettings@1@@Z) przywołany w funkcji main
+OpenGL_GLM_Camera.obj : error LNK2019: nierozpoznany zewnętrzny symbol "__declspec(dllimport) public: virtual __cdecl sf::Window::~Window(void)" (__imp_??1Window@sf@@UEAA@XZ) przywołany w funkcji main
+OpenGL_GLM_Camera.obj : error LNK2019: nierozpoznany zewnętrzny symbol "__declspec(dllimport) public: void __cdecl sf::Window::close(void)" (__imp_?close@Window@sf@@QEAAXXZ) przywołany w funkcji main
+OpenGL_GLM_Camera.obj : error LNK2019: nierozpoznany zewnętrzny symbol "__declspec(dllimport) public: bool __cdecl sf::Window::pollEvent(class sf::Event &)" (__imp_?pollEvent@Window@sf@@QEAA_NAEAVEvent@2@@Z) przywołany w funkcji main
+OpenGL_GLM_Camera.obj : error LNK2019: nierozpoznany zewnętrzny symbol "__declspec(dllimport) public: void __cdecl sf::Window::display(void)" (__imp_?display@Window@sf@@QEAAXXZ) przywołany w funkcji main
+OpenGL_GLM_Camera.obj : error LNK2001: nierozpoznany symbol zewnętrzny __imp___glewBindBuffer
+OpenGL_GLM_Camera.obj : error LNK2001: nierozpoznany symbol zewnętrzny __imp___glewBufferData
+OpenGL_GLM_Camera.obj : error LNK2001: nierozpoznany symbol zewnętrzny __imp___glewDeleteBuffers
+OpenGL_GLM_Camera.obj : error LNK2001: nierozpoznany symbol zewnętrzny __imp___glewGenBuffers
+OpenGL_GLM_Camera.obj : error LNK2001: nierozpoznany symbol zewnętrzny __imp___glewAttachShader
+OpenGL_GLM_Camera.obj : error LNK2001: nierozpoznany symbol zewnętrzny __imp___glewCompileShader
+OpenGL_GLM_Camera.obj : error LNK2001: nierozpoznany symbol zewnętrzny __imp___glewCreateProgram
+OpenGL_GLM_Camera.obj : error LNK2001: nierozpoznany symbol zewnętrzny __imp___glewCreateShader
+OpenGL_GLM_Camera.obj : error LNK2001: nierozpoznany symbol zewnętrzny __imp___glewDeleteProgram
+OpenGL_GLM_Camera.obj : error LNK2001: nierozpoznany symbol zewnętrzny __imp___glewDeleteShader
+OpenGL_GLM_Camera.obj : error LNK2001: nierozpoznany symbol zewnętrzny __imp___glewEnableVertexAttribArray
+OpenGL_GLM_Camera.obj : error LNK2001: nierozpoznany symbol zewnętrzny __imp___glewGetAttribLocation
+OpenGL_GLM_Camera.obj : error LNK2001: nierozpoznany symbol zewnętrzny __imp___glewLinkProgram
+OpenGL_GLM_Camera.obj : error LNK2001: nierozpoznany symbol zewnętrzny __imp___glewShaderSource
+OpenGL_GLM_Camera.obj : error LNK2001: nierozpoznany symbol zewnętrzny __imp___glewUseProgram
+OpenGL_GLM_Camera.obj : error LNK2001: nierozpoznany symbol zewnętrzny __imp___glewVertexAttribPointer
+OpenGL_GLM_Camera.obj : error LNK2001: nierozpoznany symbol zewnętrzny __imp___glewBindFragDataLocation
+OpenGL_GLM_Camera.obj : error LNK2001: nierozpoznany symbol zewnętrzny __imp___glewBindVertexArray
+OpenGL_GLM_Camera.obj : error LNK2001: nierozpoznany symbol zewnętrzny __imp___glewDeleteVertexArrays
+OpenGL_GLM_Camera.obj : error LNK2001: nierozpoznany symbol zewnętrzny __imp___glewGenVertexArrays
+OpenGL_GLM_Camera.obj : error LNK2001: nierozpoznany symbol zewnętrzny __imp_glewExperimental
+C:\Users\Bogdan\Desktop\SFML-2.5.1 x86\lib\sfml-system-d.lib : warning LNK4272: wystąpił konflikt typu maszyny biblioteki „x86” z typem maszyny docelowej „x64”
+C:\Users\Bogdan\Desktop\SFML-2.5.1 x86\lib\sfml-network-d.lib : warning LNK4272: wystąpił konflikt typu maszyny biblioteki „x86” z typem maszyny docelowej „x64”
+C:\Users\Bogdan\Desktop\SFML-2.5.1 x86\lib\sfml-audio-d.lib : warning LNK4272: wystąpił konflikt typu maszyny biblioteki „x86” z typem maszyny docelowej „x64”
+C:\Users\Bogdan\Desktop\SFML-2.5.1 x86\lib\sfml-window-d.lib : warning LNK4272: wystąpił konflikt typu maszyny biblioteki „x86” z typem maszyny docelowej „x64”
+C:\Users\Bogdan\Desktop\SFML-2.5.1 x86\lib\sfml-graphics-d.lib : warning LNK4272: wystąpił konflikt typu maszyny biblioteki „x86” z typem maszyny docelowej „x64”
+C:\Users\Bogdan\source\repos\OpenGL_GLM_Camera\x64\Debug\OpenGL_GLM_Camera.exe : fatal error LNK1120: liczba nierozpoznanych elementów zewnętrznych: 30
