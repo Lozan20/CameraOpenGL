@@ -31,3 +31,4 @@
 *.out
 *.app
 .vs/OpenGL_GLM_Camera/v16/ipch/AutoPCH/1b70706641613a0/OPENGL_GLM_CAMERA.ipch
+/.vs
